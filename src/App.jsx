@@ -21,12 +21,10 @@ function App() {
       <Header />
       <main>
         <section id="core-concepts">
-          <h2>Core Components</h2>
+          <h2>Core Components added Dynamically</h2>
           <ul>
-            <CoreConcept title="Components" img={componentImage} description="Components are core building blocks of React components" />
-            <CoreConcept title={CORE_CONCEPTS[1].title} img={CORE_CONCEPTS[1].image} description={CORE_CONCEPTS[1].description} />
-            <CoreConcept title={CORE_CONCEPTS[2].title} img={CORE_CONCEPTS[2].image} description={CORE_CONCEPTS[2].description} />
-            <CoreConcept title="State" img={stateImage} description="React-managed data which, when changed, causes the component to re-render & the UI to update." />
+            {CORE_CONCEPTS.map((item) => (<CoreConcept key={item.title} {...item}  />)
+            )}
           </ul>
         </section>
         <section id="examples">
