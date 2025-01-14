@@ -1,9 +1,9 @@
 export default function CoreConcept(props) {
     return (
       <li>
-      <img src={props.img} alt ="componentImage" />
-      <h3>{props.tile}</h3>
-      <p>{props.descrtion}</p>
+      <img src={props.image} alt ="componentImage" />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
     </li>
     )
   }
