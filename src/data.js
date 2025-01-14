@@ -30,7 +30,7 @@ export const CORE_CONCEPTS = [
   },
 ];
 
-export const EXAMPLES = {
+export const EXAMPLES_ARRAY = {
   components: {
     title: 'Components',
     description:
